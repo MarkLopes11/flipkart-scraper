@@ -1,0 +1,21 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Flipkart Scraper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="search-container">
+        <h1>Live Flipkart Product Search</h1>
+        <input type="text" id="searchInput" placeholder="Search for products like 'camera', 'pillow'..." autocomplete="off">
+        <div id="resultsDropdown"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
